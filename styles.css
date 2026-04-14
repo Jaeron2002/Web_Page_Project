@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: white;
+    padding: 80px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+}
+
+/* Cards */
+.law-card {
+    transition: 0.3s;
+}
+
+.law-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* See More */
+.see-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0d6efd;
+    transition: 0.3s;
+}
+
+.see-more:hover {
+    color: #6610f2;
+    transform: translateX(5px);
+}
+
+/* Footer */
+.footer {
+    background: #212529;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+h1, h2 {
+    font-weight: bold;
+}
