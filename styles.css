@@ -1,58 +1,100 @@
+/* General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
 }
 
-/* Hero */
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #0d6efd, #6610f2);
     color: white;
-    padding: 80px;
+    padding: 100px 20px;
     text-align: center;
     animation: fadeIn 1.5s ease;
 }
 
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
 /* Sections */
 .section {
-    padding: 60px 20px;
+    padding: 70px 20px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* Cards */
 .law-card {
-    transition: 0.3s;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
 }
 
+/* Card hover */
 .law-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* See More */
+/* Card text spacing */
+.card-body p {
+    font-size: 0.95rem;
+}
+
+/* See More Link */
 .see-more {
     display: inline-block;
     margin-top: 10px;
-    text-decoration: none;
     font-weight: bold;
     color: #0d6efd;
-    transition: 0.3s;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .see-more:hover {
     color: #6610f2;
-    transform: translateX(5px);
+    transform: translateX(6px);
 }
 
 /* Footer */
 .footer {
-    background: #212529;
+    background: linear-gradient(135deg, #212529, #000000);
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    font-size: 0.9rem;
 }
 
 /* Animation */
 @keyframes fadeIn {
-    from {opacity:0; transform: translateY(20px);}
-    to {opacity:1; transform: translateY(0);}
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h1, h2 {
